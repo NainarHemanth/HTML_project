@@ -1,0 +1,44 @@
+
+.a{
+    animation: Animation 5s ease-in 0s 1 alternate-reverse forwards;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}  
+
+
+.card {
+    width: 190px;
+    height: 254px;
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.card:hover{
+    background: rgb(236, 215, 99);
+    border-radius: 3px;
+    border-style: solid;
+    border-color: rgb(1, 65, 44);
+
+}
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    padding: 7px;
+    text-align: center;
+    object-fit: cover;
+}
+
+@keyframes Animation {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.2;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

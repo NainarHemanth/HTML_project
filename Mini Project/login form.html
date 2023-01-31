@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Login Form</title>
+</head>
+<style>
+		
+	form{
+		position:  absolute;
+		top:  50%;
+		left:  50%; 
+		transform: translate(-50%, -50%);
+		border: 1px solid #222;
+		width: 350px;
+		height: 500px;
+		border-radius: 11px;
+		background: ;
+		display:  flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	form div{
+		margin: 10px 10px;
+	}
+	form div label{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	input{
+		margin: 10px;
+		outline: none;
+		border: 1px solid #777;
+		background: transparent;
+		border-radius: 13px;
+		width: 200px;
+		height: 36px;
+		text-align: center;
+		font-size: 17px;
+	}
+	input:hover{
+		border-color: blue;
+	}
+	span{
+	position: absolute;
+	transition: 1s ease-in-out;
+	font-size: 17px;
+	opacity: 0.6;
+	}
+	input:focus ~ span{
+	transform: translate(calc(-100%  - 1px), calc(-100% - 4px));
+	font-size: 13px;
+	opacity: 1;
+	font-style: italic;
+	color: blue;
+	background: white;
+
+	}
+	button{
+		color: #3184BF;
+		width:  100px;
+		aspect-ratio:  3/1;
+		background: whitesmoke;
+		border: 1px solid #777;
+		border-radius: 10px;
+		font-size: 17px;
+		cursor: pointer;
+	}
+
+</style>
+<header> </header>
+<body>
+	<form>
+		<img src="images/logo.png">
+		<div>
+			<label>
+				<input type="text">
+				<span>Username</span>
+			</label>
+		</div>	
+
+		<div>
+			<label>
+				<input type="password">
+				<span>Password</span>
+			</label>
+		</div>
+		
+		<div>
+			<button>Submit</button>
+		</div>
+	</form>
+
+</body>
+</html>

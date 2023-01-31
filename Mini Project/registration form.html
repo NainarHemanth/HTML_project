@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Registration Form</title>
+</head>
+<style>
+	*{
+		border-color: whitesmoke;
+	}
+	body{
+		background-image: url("images/background.jpg");
+		background-size: cover;
+
+	}
+		
+	form{
+		position:  absolute;
+		top:  50%;
+		left:  50%; 
+		transform: translate(-50%, -60%);
+		border: 1px solid #222;
+		width: 350px;
+		height: 500px;
+		border-radius: 11px;
+		background: ;
+		opacity: ;
+		display:  flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	form div{
+		margin: 10px 10px;
+		display:  flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	form div label{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.chgen{
+		align-content: space-between;
+	}
+	input{
+		margin: 10px;
+		outline: none;
+		border: 1px solid #777;
+		background: transparent;
+		border-radius: 13px;
+		width: 200px;
+		height: 30px;
+		text-align: center;
+		font-size: 17px;
+	}
+	input:hover{
+		border-color: blue;
+	}
+	.hello{
+	position: absolute;
+	transition: 1s ease-in-out;
+	font-size: 17px;
+	opacity: 0.9;
+	}
+	.gen{
+		position: fixed;;
+		transform: translateX(40px);
+		margin: 0px;
+		padding: 0px;
+		color: black;
+	}
+	input:focus ~ .gen{
+		transform: translateX(40px);
+		font-size: 17px;
+		color: black;
+	}
+
+	input:focus ~ .hello{
+	transform: translate(calc(-100%  - 1px), calc(-100% - 4px));
+	font-size: 13px;
+	opacity: 1;
+	font-style: italic;
+	color: blue;
+	background: transparent;
+
+	}
+	button{
+		color: #318424;
+		width:  100px;
+		aspect-ratio:  3/1;
+		background: transparent;
+		border: 1px solid #777;
+		border-radius: 10px;
+		font-size: 17px;
+		cursor: pointer;
+		margin: 10px;
+	}
+
+	select{
+		width: 100px;
+		background: transparent;
+		border-radius: 3px;
+	}
+	.date{
+		width: 140px;
+		background: transparent;
+		height: 20px;
+		border-radius: 3px;
+	}
+	.check{
+		height: 20px;
+		width: 100px;
+		margin-right: 0px;
+		padding: 0px;
+	}
+
+
+
+</style>
+<header> </header>
+<body>
+	<form>
+		
+		<div>
+			<label>
+				<input type="text" >
+				<span class="hello">Username</span>
+			</label>
+		</div>	
+
+		<div>
+			<label>
+				<input type="password" >
+				<span class="hello">Password</span>
+			</label>
+		</div>
+		<div>
+			<label>
+				<input type="password" class="hello">
+				<span class="hello">Confirm Password</span>
+			</label>
+		</div>
+		
+		<div>
+			<select>
+			<option>Select your branch</option>
+			<option>CSE</option>
+			<option>ECE</option>
+			<option>CIVIL</option>
+			<option>MECHANICAL</option>
+			<option>BIO-TECH</option>
+			<option>Other</option>
+		</select>
+		<input type="date" class="date">
+		</div>
+		<div class="chgen">
+			<label>
+				<input type="checkbox" class="check">
+				<span class="gen">Male</span>
+			</label>
+			<label>
+				<input type="checkbox" class="check">
+				<span class="gen">Female</span>
+			</label>
+		</div>
+
+		<div>
+			<button>Submit</button>
+			<button>reset</button>
+		</div>
+
+	</form>
+
+</body>
+</html>

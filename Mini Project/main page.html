@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Page</title>
+</head>
+<style>
+	 body{
+            display: flex;
+            flex-direction: column;
+            background: white;
+            margin: 0px;}
+        label h2{
+        margin: 0px;
+        transform: translateY(5px);
+    }
+        header{
+            margin-top: 15px;
+            width: 100%;
+            height: 40px;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: #87CEEB;
+            text-align: center;
+           animation: 3s anime infinite;
+
+        }
+        @keyframes anime{
+            0%{
+                color: violet;
+            }
+            14%{
+                color: indigo;
+            }
+            29%{
+                color: blue;
+            }
+            42%{
+                color: green;
+            }
+            56%{
+                color: lightgoldenrodyellow;
+            }
+            72%{
+                color: orange;
+            }
+            88%{
+                color: crimson;
+            }
+            100%{
+                color: white;
+            }
+
+        }
+        div{
+            color: black;
+        	display: flex;
+        	flex-direction: row;
+        	background: white;
+        	height: 400px;
+        	transform: translateY(36px);
+
+
+        }
+        form{
+        	height: 300px;
+        	width: 1000px;
+        	position: relative;
+        	padding: 10px;
+        	transform: translateY(20px);
+        	display: flex;
+        	flex-direction: column;
+        	background: #87CEEB;
+        	text-align: left;
+        	border-style: solid;
+        	border-width: 1px;
+        	border-color: black;
+        	font-size: large;
+        	margin: 10px;
+        	border-radius: 5px;
+        	opacity: 0.8;
+        }
+        form:hover{
+        	opacity: 1;
+        }
+        form p{
+        	padding: 1px;
+        	margin: 5px;
+        }
+        span{
+        	color: darkblue;
+        	font-style: oblique;
+        }
+        .feed{
+        	
+        	width: fit-content;
+        }
+        form a{
+        	width: fit-content;
+        	padding: 5px;
+        	border-style: solid;
+        	border-color: blue;
+            border-radius: 7px;
+        	border-width: 2px;
+        	margin: 3px;
+        	background: silver;
+        	opacity: 0.8;
+        	left: 50%;
+        	transform: translateX(50%);
+        }
+        form a:hover{
+        	opacity: 1;
+        	color: blue;
+        	
+        }
+        .home{
+        	text-align: center;
+        	width: 80px;
+        }
+        footer div{
+
+            height: fit-content;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            color: black;
+
+
+
+            
+
+        	
+        	
+        }
+        .what{
+
+        	height: 50px;
+        	
+        }
+        img{
+            position: relative;
+        	padding: 3px;
+        	
+        	height: 40px;
+        	width: 40px;
+        	opacity: 1;
+        }
+        img:hover{
+        	opacity: 0.8;
+        }
+    
+</style>
+
+<body>
+	<header>
+        <label><h2>Main Page</h2></label>
+    </header>
+    <div>
+
+	    <form>
+		    	<span>My Info:</span>
+			<p><strong class="name">Name:</strong> Nainar Hemanth Kumar Sai</p>
+			<p><strong>Clg name:</strong> S.R.M Institute of Science and Technology</p>
+			<p><strong>Year of Study:</strong> II<sup>nd</sup> Year</p>
+			<p><strong>Degree:</strong> B.Tech</p>
+			<p><strong>Department:</strong> Computer Science and Engineering</p>
+			<a href="mini project.html" class="home">Home</a>
+			<a href="New folder\index.html">My Project</a>
+		</form>
+		<form class="feed">
+			<span>Feedback:</span>
+			<p>The HTML and CSS bootcamp that was conducted by MSP Tech was great. Gained a lot of knowledge from it, that too in 5 days. Got a great explanation from the trainer. Although it was a short span, we had learnt a lot about web page designing and usage of different tags in HTML and also how to apply different styles in CSS. The bootcamp helped a lot to learn what I was desiring to learn. Thank You.</p>
+		</form>
+	</div>
+</body>
+<footer>
+	<div>
+		<p><strong>Follow MSP Tech on:</strong><p>
+			<a href="https://chat.whatsapp.com/CSaglJMsFbbLJADDI2IjXfs"><img class="what" src="images\index-3.jpeg"></a>
+			<a href="https://www.youtube.com/@msptech3"><img class="you" src="images\index.png"></a>
+			<a href="https://instagram.com/msptech3?igshid=YmMyMTA2M2Y"><img class="insta" src="images\index-1.jpeg"></a>
+			<a href="https://t.me/msptech3"><img class="tele" src="images\index-2.jpeg"></a>
+			<a href="https://www.linkedin.com/in/msp-tech-137589258"><img src="images\index-4.png"></a>
+			<a href="https://www.facebook.com/profile.php?id=100088241905378"><img src="images\index-5.png"></a>
+	</div>
+</footer>
+</html>
